@@ -1,0 +1,83 @@
+.container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #e4e4e4;
+}
+.mainheaer{
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+.container>view{
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 10px;
+}
+.movieimgbox{
+  padding: 2px;
+  border: 1px solid #fff;
+  flex-shrink: 0
+}
+.movieimg{
+  height: 100%;
+  width: 100%;
+}
+
+.textBox{
+  flex-grow: 1;
+  padding: 5px 0 0 10px;
+}
+.star{
+  height: 60px;
+  width: 60px;
+  background: greenyellow;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+}
+.textBox .text{
+  display: block;
+}
+.textBox .name{
+  color: #989797;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.textBox .nameen{
+  font-size: 12px;
+  color: #989797;
+}
+.commentSpecial{
+  font-size: 10px;
+  color: dodgerblue;
+}
+
+.storytext{
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2; 
+  font-size: 14px;
+  color: #989797;
+  line-height: 1.4;
+}
+.actors scroll-view{
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.scroll-view-item{
+  width: 150px;
+  height: 160px;
+  display: inline-block;
+  overflow: hidden;
+  margin:0 5px; 
+}
+
+.scroll-view-item image{
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,29 @@
+
+<view class="container">
+  <view class="header">
+    <view class="mainheaer">
+      <view class="movieimgbox" style="width: 72px; height: {{imageHeight}}px;" src="{{movieDetail.img}}">
+        <image class="movieimg" src="{{movieDetail.img}}"></image>
+      </view>
+      <view class="textBox">
+        <text class="text name">{{movieDetail.name}}</text>
+        <text class="text nameen">{{movieDetail.nameEn}}</text>
+        <text class="commentSpecial">{{movieDetail.commentSpecial}}</text>
+      </view>
+      <view class="star">
+        {{movieDetail.overallRating}}
+      </view>
+    </view>
+  </view>
+  <view class="story">
+    <text class="storytext">剧情： {{movieDetail.story}}</text>
+  </view>
+  <view class="actors">
+    <view>演员</view>
+    <scroll-view scroll-x="true" style="height: 200px;">
+      <view class="scroll-view-item actorinfo" wx:for="{{movieDetail.actors}}" wx:for-item="item" wx:key="*this" data-id="{{item.actorId}}">
+        <image src="{{item.img}}" mode='aspectFill'></image>
+      </view>
+    </scroll-view>
+  </view>
+</view>

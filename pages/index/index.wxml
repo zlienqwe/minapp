@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{movieList}}" wx:for-item="item" wx:key="*this" data-id="{{item.id}}" class="listItem" bindtap="info">
+    <image class="image" style="width: 30px; height: 45px; background-color: #eeeeee;" mode="aspectFill" src="{{item.img}}"></image>
+    <text class="text">{{item.tCn}}</text>
+  </view>
+</view>

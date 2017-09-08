@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/music/music",
+    "pages/book/book",
+    "pages/about/about",
+    "pages/moviedetail/moviedetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小吕和小朱",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath": "./res/movie_icon.png",
+        "selectedIconPath": "./res/movie_selected_icon.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "./res/music_icon.png",
+        "selectedIconPath": "./res/music_selected_icon.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "阅读",
+        "iconPath": "./res/book_icon.png",
+        "selectedIconPath": "./res/book_selected_icon.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "./res/about_icon.png",
+        "selectedIconPath": "./res/about_selected_icon.png"
+      }
+    ]
+  },
+  "debug": true
+}
